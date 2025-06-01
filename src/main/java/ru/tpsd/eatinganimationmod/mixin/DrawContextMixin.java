@@ -27,6 +27,7 @@ public abstract class DrawContextMixin {
 			return this.getHeldFoodItemModel(stack, entity, seed);
 		}
 		return client.getItemRenderer().getModel(stack, world, entity, seed);
+
 	}
 
 	@Unique
