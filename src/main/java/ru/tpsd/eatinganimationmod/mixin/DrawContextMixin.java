@@ -38,6 +38,6 @@ public abstract class DrawContextMixin {
 				? client.getItemRenderer().getModels().getModel(stack)
 				: currentItemBakedModel.getOverrides().apply(currentItemBakedModel, stack, client.world, entity, seed);
 
-		return itemBakedModel == null ? client.getItemRenderer().getModels().getModelManager().getMissingModel() : itemBakedModel;
+		return itemBakedModel == null ? client.getItemRenderer().getModels().getModelManager().getMissingBlockModel() : itemBakedModel;
 	}
 }
